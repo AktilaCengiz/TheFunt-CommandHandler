@@ -361,7 +361,7 @@ class TheFuntClient extends Discord.Client {
                     }
 
                 if (cxc[i+1] === undefined) {
-                    msg.channel.send(new Discord.RichEmbed().setColor("DARKBLUE").setDescription(cmd.args[i].soru).setFooter("<a:loading:503562519609081856> | Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
+                    msg.channel.send(new Discord.RichEmbed().setColor("#9b59b6").setDescription(cmd.args[i].soru).setFooter("<a:loading:503562519609081856> | Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
                     
                     try {
 
@@ -483,7 +483,7 @@ class TheFuntClient extends Discord.Client {
                 return
             };
 
-        msg.channel.send(new Discord.RichEmbed().setColor("DARKBLUE").setDescription(cmd.args[i].soru).setFooter("<a:loading:503562519609081856> | Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
+        msg.channel.send(new Discord.RichEmbed().setColor("#9b59b6").setDescription(cmd.args[i].soru).setFooter("<a:loading:503562519609081856> | Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
 
         try {
 
