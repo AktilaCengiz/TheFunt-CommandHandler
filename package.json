@@ -1,54 +1,20 @@
 {
-  "_from": "discordjs-advanced",
-  "_id": "discordjs-advanced@2.0.5",
-  "_inBundle": false,
-  "_integrity": "sha512-CkGH4nGPtYbOpRfzxgxYBoNyGGlaW9PajrC0RGcIYngVuthBpR+/Jicclm6pXbJkjwQN6WOh0iqX+NlkdYRuxA==",
-  "_location": "/discordjs-advanced",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "discordjs-advanced",
-    "name": "discordjs-advanced",
-    "escapedName": "discordjs-advanced",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/discordjs-advanced/-/discordjs-advanced-2.0.5.tgz",
-  "_shasum": "29cb6cae2ffa1a0be4a9d21fd525ac8bac5beaa2",
-  "_spec": "discordjs-advanced",
-  "_where": "C:\\Users\\Aktilax\\Desktop\\bot",
-  "author": {
-    "name": "CeyhunY"
-  },
-  "bundleDependencies": false,
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "discord.js": "^11.4.2",
-    "fs": "0.0.1-security",
-    "lowdb": "^1.0.0",
-    "npm": "^6.5.0"
-  },
-  "deprecated": false,
-  "description": "Kullanışlı, pratik, veritabanı sistemi ve daha fazlasını barındıran Türkçe Discord.JS Frameworku!",
-  "keywords": [
-    "discord",
-    "discord.js",
-    "advanced",
-    "advanced-discord",
-    "advanced-discord.js",
-    "discordjs-advanced",
-    "discord-advanced"
-  ],
-  "main": "index.js",
-  "name": "discordjs-advanced",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "2.0.5"
-}
+    "name": "TheFunt-CommandHandler",
+    "description": "",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/AktilaCengiz/TheFunt-CommandHandler/"
+    },
+    "keywords": [],
+    "author": "TheFunt / AltinokHost Isbirligi",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/AktilaCengiz/TheFunt-CommandHandler/issues"
+    },
+    "homepage": "https://github.com/AktilaCengiz/TheFunt-CommandHandler/"
+  }
