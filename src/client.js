@@ -703,7 +703,7 @@ async function yanlışVeriYeniArgs(bot, msg, cmd, arg, content = '', args = [],
 
             }
         })
-    };
+  
 };
 
 module.exports = TheFuntClient;
