@@ -1,4 +1,4 @@
-const Advanced = require("../../../index.js");
+const TheFunt = require("../../../index.js");
 const Discord = require("discord.js");
 
 module.exports = {
