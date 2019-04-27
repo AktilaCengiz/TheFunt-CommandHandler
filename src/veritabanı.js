@@ -3,7 +3,7 @@ const fs = require('fs');
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 
-class TheFuntVeritabanı {
+class TheFuntVeritabani {
     constructor(verii) {
         this.veriDosya = verii;
         if (this.veriDosya.split(".").pop() !== 'json') throw new Error('Veritabanı dosyası "json" uzantılı olmalı. \nÖrneğin, "veritabanı.json" yapabilirsiniz.');
