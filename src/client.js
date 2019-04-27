@@ -552,7 +552,7 @@ cmd.baslat(this, msg, args, this.veritabanı)
 
 async function yanlışVeriYeniArgs(bot, msg, cmd, arg, content = '', args = [], cevaps = [], val = '', xxx = '') {
   for (var i = 0; i < cmd.args.length; i++) {
-    msg.channel.send(new Discord.RichEmbed().setColor("#FF0000").setDescription(`Yazılan argüman bir ${arg} olmalı! Lütfen tekrar deneyiniz.`).setFooter("Komut işlemini iptal etmek için \"iptal\" yazınız. \nKomut işlemi otomatik olarak \"30\" saniye sonra iptal edilecektir."))
+    msg.channel.send(new Discord.RichEmbed().setColor("#FF0000").setDescription(`Yazılan argüman bir ${arg} olmalı! Lütfen tekrar deneyiniz.`).setFooter("Komut isetğini iptal etmek için \"iptal\" yazınız. \nKomut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
                     
     try {
 
