@@ -683,6 +683,51 @@ async function yanlışVeriYeniArgs(bot, msg, cmd, arg, content = '', args = [],
         })
         
 
+//Varsayılan/hazır komutlar
+        if (this.varsayılanKomutlarFiltre === 'hepsi') { return }
+        if (this.varsayılanKomutlarFiltre !== 'hepsi') {
+        var vKategoriler = [['genel', 'Genel Komutlar'], ['yapımcı', 'Bot Yapımcısı Komutları']]
+        vKategoriler.forEach((kk) => {
+            var k = kk[0]
+            var k2 = kk[1]
+            this.kayıt.kategoriler.set(k, k2)
+            fs.readdir(`${__dirname}/varsayılanKomutlar/${k}/`, (err, files) => {
+                let jsfiles = files.filter(f => f.split(".").pop() === "js")
+            
+                if(jsfiles.length == 0) {
+                    return
+                } else {
+                    if (err) {
+                        return
+                    }
+
+                if (this.varsayılanKomutlarFiltre !== null) {
+                    jsfiles.filter(f => this.varsayılanKomutlarFiltre.includes(f.split(".")[0]) === false).forEach(f => {
+                        let props = require(`./varsayılanKomutlar/${k}/${f}`)
+                        var cmd = props;
+                        this.kayıt.komutlar.set(cmd.komut, cmd)
+                        cmd.alternatifler.forEach(a => {
+                            this.kayıt.alternatifler.set(a, cmd.komut)
+                        })
+                    })
+                };
+                if (this.varsayılanKomutlarFiltre === null) {
+                    jsfiles.forEach(f => {
+                        let props = require(`./varsayılanKomutlar/${k}/${f}`)
+                        var cmd = props;
+                        this.kayıt.komutlar.set(cmd.komut, cmd)
+                        cmd.alternatifler.forEach(a => {
+                            this.kayıt.alternatifler.set(a, cmd.komut)
+                        })
+                    })
+                };
+
+                }
+            })
+          })
+       }
+   };
+
     eventYükle(dosya) {
         if (!dosya) return console.log(mesajlar.hatalar.ayarlar.replace("{x}", "ayrı event dosyasını (Örneğin: 'client.eventYükle(\"klasör adı\")')"))
         fs.readdir(`${dosya}/`, (err, files) => {
@@ -703,7 +748,7 @@ async function yanlışVeriYeniArgs(bot, msg, cmd, arg, content = '', args = [],
 
             }
         })
-  
+    };
 };
 
 module.exports = TheFuntClient;
