@@ -1,6 +1,6 @@
 {
     "name": "TheFunt-CommandHandler",
-    "description": "",
+    "description": "TheFunt'a ait Dünyanın En Güzel handler'i :)",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
@@ -10,11 +10,19 @@
       "type": "git",
       "url": "https://github.com/AktilaCengiz/TheFunt-CommandHandler/"
     },
+     "dependencies": {
+    "chalk": "^2.4.2",
+    "discord.js": "^11.4.2",
+    "fs": "0.0.1-security",
+    "lowdb": "^1.0.0",
+    "npm": "^6.5.0"
+  },
     "keywords": [],
     "author": "TheFunt / AltinokHost Isbirligi",
     "license": "ISC",
     "bugs": {
       "url": "https://github.com/AktilaCengiz/TheFunt-CommandHandler/issues"
     },
+    
     "homepage": "https://github.com/AktilaCengiz/TheFunt-CommandHandler/"
   }
