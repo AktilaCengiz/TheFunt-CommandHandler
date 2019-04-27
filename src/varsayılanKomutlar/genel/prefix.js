@@ -33,7 +33,7 @@ module.exports.baslat = async (client, message, args) => {
         .setColor("#9b59b6")
         .setDescription(`Botun sunucudaki prefixi başarıyla sıfırlanarak tekrar \`${client.ayarlar.prefix}\` olarak ayarlandı!`)
         message.channel.send({embed:embed})
-        return
+        return;
     }
 
     var embed = new Discord.RichEmbed()
