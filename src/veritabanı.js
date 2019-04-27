@@ -108,4 +108,4 @@ class TheFuntVeritabani {
 
 };
 
-module.exports = TheFuntVeritabanı;
+module.exports = TheFuntVeritabani;
