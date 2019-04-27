@@ -11,7 +11,7 @@ module.exports = {
         args: [
             {
                 anahtar: 'prefix',
-                soru: 'Botun ön-ekini ne yapmak istediğinizi yazınız. \n(Ön-ek\'i sunucu içi değiştirir.)',
+                soru: 'Botun prefixini ne yapmak istediğinizi yazınız. \n(Prefix\'i sadece bu sunucu içi değiştirir.)',
                 tip: 'yazi'
             }
         ]
@@ -23,19 +23,21 @@ module.exports.baslat = async (client, message, args) => {
     client.veritabanı.ayarla(`${message.guild.id}.prefix`, args.prefix)
 
     if (args.prefix === 'varsayılan' || args.prefix === 'default') {
-        if (client.veritabanı.varMı(`${message.guild.id}.prefix`) === false) return message.reply('Sunucuda özel ön-ek ayarlanmamış! Neyi sıfırlayabilirim?!')
+        if (client.veritabanı.varMı(`${message.guild.id}.prefix`) === false) return message.send(new Discord.RichEmbed()
+            .setColor("#FF0000")
+            .setDescription('Sunucunuzda prefix varsayılan olarak ayarlı. Sıfırlayabileceğim bir şey yok.'));
 
         client.veritabanı.sil(`${message.guild.id}.prefix`)
         
         var embed = new Discord.RichEmbed()
-        .setColor("DARKBLUE")
-        .setDescription(`Botun sunucudaki ön-ek'i başarıyla sıfırlanarak tekrar \`${client.ayarlar.prefix}\` olarak ayarlandı!`)
+        .setColor("#9b59b6")
+        .setDescription(`Botun sunucudaki prefixi başarıyla sıfırlanarak tekrar \`${client.ayarlar.prefix}\` olarak ayarlandı!`)
         message.channel.send({embed:embed})
         return
     }
 
     var embed = new Discord.RichEmbed()
-    .setColor("DARKBLUE")
-    .setDescription(`Botun sunucudaki ön-ek'i başarıyla \`${args.prefix}\` olarak ayarlandı!`)
+    .setColor("#9b59b6")
+    .setDescription(`Botun sunucudaki prefixi başarıyla \`${args.prefix}\` olarak ayarlandı!`)
     message.channel.send({embed:embed})
 };
