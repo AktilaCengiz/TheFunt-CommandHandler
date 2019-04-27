@@ -35,9 +35,9 @@ module.exports.baslat = async (client, message, args) => {
         str += `= ${client.kayıt.kategoriler.get(k).toString().charAt(0).toUpperCase() + client.kayıt.kategoriler.get(k).toString().slice(1)} =\n ${yardim[k].join(' \n ')} \n\n`
     }
 
-    var mr = await message.reply("Komutlarımı özel mesaj olarak gönderdim!")
+    var mr = await message.reply("Komutlar özel mesaj olarak gönderildi!")
     message.author.send("```asciidoc\n"+str+"\n```", {split: true})
-    .catch(() => { mr.edit("Komutlarımı sana özel mesaj olarak gönderemiyorum! Sanırım özel mesajların kapalı veya beni engelledin!") })
+    .catch(() => { mr.edit("Komutlar özel mesaj olarak gönderilirken hata oluştu. Sanırım özel mesajların kapalı veya beni engelledin!") })
    } else if (args.komut !== 'hepsi') {
        var komut = args.komut
        if (client.kayıt.komutlar.has(komut) === false && client.kayıt.alternatifler.has(komut) === false) {
