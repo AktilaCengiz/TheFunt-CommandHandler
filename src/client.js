@@ -408,7 +408,7 @@ class TheFuntClient extends Discord.Client {
                         }
 
                     } catch(err) {
-                        return msg.reply('<a:hata:503562520171380766> | Üzgünüm! Komut isteği süresi doldu ve komut isteği otomatik olarak iptal edildi!') 
+                        return msg.reply(' Üzgünüm! Komut isteği süresi doldu ve komut isteği otomatik olarak iptal edildi!') 
                     }
 
                     content = val;
