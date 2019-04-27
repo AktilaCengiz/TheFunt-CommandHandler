@@ -1,11 +1,11 @@
 const Discord = require("discord.js");
 
 module.exports = {
-        komut: "ön-ek",
+        komut: "prefix",
         açıklama: "Botun sunucudaki ön-ek'ini değiştirmeyi sağlar.",
         kategori: "genel",
         alternatifler: ["prefix", "önek"],
-        kullanım: "ön-ek [istediğiniz ön-ek]",
+        kullanım: "prefix [istediğiniz ön-ek]",
         yetki: "ADMINISTRATOR",
         
         args: [
