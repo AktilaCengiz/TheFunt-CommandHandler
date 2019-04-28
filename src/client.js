@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const fs = require('fs');
 const chalk = require('chalk');
 const db = require('./veritabanı.js');
+const mz = require('./müzik.js');
 
 const mesajlar = {
     hatalar: {
@@ -164,6 +165,8 @@ class TheFuntClient extends Discord.Client {
             this.veritabanı.çıkar = await this.veritabanı.çıkar;
             this.veritabanı.arttır = await this.veritabanı.arttır;
             this.veritabanı.azalt = await this.veritabanı.azalt;
+          
+          this.müzik = new mz(this, msg);
 
             var prefixx =  this.ayarlar.prefix;
             if (this.veritabanı !== null || this.veritabanı !== undefined) {
@@ -361,7 +364,7 @@ class TheFuntClient extends Discord.Client {
                     }
 
                 if (cxc[i+1] === undefined) {
-                    msg.channel.send(new Discord.RichEmbed().setColor("#9b59b6").setDescription(cmd.args[i].soru).setFooter("<a:loading:503562519609081856> | Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
+                    msg.channel.send(new Discord.RichEmbed().setColor("#9b59b6").setDescription(cmd.args[i].soru).setFooter("<a:loading2:503562521077219328> | Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
                     
                     try {
 
