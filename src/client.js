@@ -365,7 +365,7 @@ class TheFuntClient extends Discord.Client {
                     }
 
                 if (cxc[i+1] === undefined) {
-                    msg.channel.send(new Discord.RichEmbed().setColor("#9b59b6").setDescription(cmd.args[i].soru).setFooter("<a:loading:503562519609081856> | Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
+                    msg.channel.send(new Discord.RichEmbed().setColor("#9b59b6").setDescription(cmd.args[i].soru).setFooter("Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
                     
                     try {
 
@@ -487,7 +487,7 @@ class TheFuntClient extends Discord.Client {
                 return
             };
 
-        msg.channel.send(new Discord.RichEmbed().setColor("#9b59b6").setDescription(cmd.args[i].soru).setFooter("<a:loading:503562519609081856>"+" | Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
+        msg.channel.send(new Discord.RichEmbed().setColor("#9b59b6").setDescription(cmd.args[i].soru).setFooter("Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
 
         try {
 
@@ -534,7 +534,7 @@ class TheFuntClient extends Discord.Client {
         }
 
     } catch(err) {
-        return  msg.channel.send(new Discord.RichEmbed().setColor("RED").setDescription(' <hata:503562520171380766> | Üzgünüm! Komut isteği süresi doldu. Komut isteğiniz otomatik olarak iptal edildi!')) 
+        return  msg.channel.send(new Discord.RichEmbed().setColor("RED").setDescription(clientT.emojis.get('503562520171380766') +' | Üzgünüm! Komut isteği süresi doldu. Komut isteğiniz otomatik olarak iptal edildi!')) 
     }
 
         content = val;
@@ -556,7 +556,7 @@ cmd.baslat(this, msg, args, this.veritabanı)
 
 async function yanlışVeriYeniArgs(bot, msg, cmd, arg, content = '', args = [], cevaps = [], val = '', xxx = '') {
   for (var i = 0; i < cmd.args.length; i++) {
-    msg.channel.send(new Discord.RichEmbed().setColor("#FF0000").setDescription(`Yazılan argüman bir ${arg} olmalı! Lütfen tekrar deneyiniz.`).setFooter("Komut isetğini iptal etmek için \"iptal\" yazınız. \nKomut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
+    msg.channel.send(new Discord.RichEmbed().setColor("#FF0000").setDescription(`Yazılan argüman bir ${arg} olmalı! Lütfen tekrar deneyiniz.`).setFooter("Komut isteğini iptal etmek için \"iptal\" yazınız. \nKomut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
                     
     try {
 
