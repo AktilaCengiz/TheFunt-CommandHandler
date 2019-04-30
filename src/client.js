@@ -486,7 +486,7 @@ class TheFuntClient extends Discord.Client {
                 return
             };
 
-        msg.channel.send(new Discord.RichEmbed().setColor("#9b59b6").setDescription(cmd.args[i].soru).setFooter("client.emojis.get("503562521077219328") | Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
+        msg.channel.send(new Discord.RichEmbed().setColor("#9b59b6").setDescription(cmd.args[i].soru).setFooter(client.emojis.get("503562521077219328")+" | Komut isteğini iptal etmek için \"iptal\" yazınız. \n Komut isteği otomatik olarak \"30\" saniye sonra iptal edilecektir."))
 
         try {
 
