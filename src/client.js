@@ -534,7 +534,7 @@ class TheFuntClient extends Discord.Client {
         }
 
     } catch(err) {
-        return  msg.channel.send(new Discord.RichEmbed().setColor("RED").setDescription(clientT.emojis.get('503562520171380766') +' | Üzgünüm! Komut isteği süresi doldu. Komut isteğiniz otomatik olarak iptal edildi!')) 
+        return  msg.channel.send(new Discord.RichEmbed().setColor("RED").setDescription(' Üzgünüm! Komut isteği süresi doldu. Komut isteğiniz otomatik olarak iptal edildi!')) 
     }
 
         content = val;
