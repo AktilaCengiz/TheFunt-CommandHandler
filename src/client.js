@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const clientT = new Discord.Client();
+const client = new Discord.Client();
 const fs = require('fs');
 const chalk = require('chalk');
 const db = require('./veritabanı.js');
