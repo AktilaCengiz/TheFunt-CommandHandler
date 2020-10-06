@@ -1,4 +1,3 @@
 # TheFunt-CommandHandler (Komut Yükleyici)
 TheFunt Bot Türkiye
-TheFunt Stüdyosu tarafından 2019 yılı için yapılmış ve YALNIZCA EKİP TARAFINDAN kullanılması izinlidir.
-Bu modülün tamamı bize ait değildir. Sadece özelleştirilmiş bir modüldür.
+TheFunt 2019 yılında çıkarttığı ve sonrasında V11 desteğinin kesilmesi ile kullanıma kapalı eski komut yükleyici komutudur.
